@@ -103,13 +103,20 @@ form.addEventListener("submit", function(e) {
     window.location.href = "submission.html";
 });
 
+function section(element) {
+    const card = el("div");
+    card.className = "question-card";
+    card.appendChild(element);
+    return card;
+}
+
 form.append(
-    namaGroup,
-    umurGroup,
-    jkGroup,
-    rokokGroup,
-    jenisGroup,
-    btnGroup
+    section(namaGroup),
+    section(umurGroup),
+    section(jkGroup),
+    section(rokokGroup),
+    section(jenisGroup),
+    section(btnGroup)
 );
 
 container.append(title, desc, form);
