@@ -115,3 +115,32 @@ button.secondary {
 button.secondary:hover {
     background: rgba(103,58,183,0.1);
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #dadce0;
+}
+
+th {
+    background: #f8f9fa;
+    font-weight: 500;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 24px;
+    color: #673ab7;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
