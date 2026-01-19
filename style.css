@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f0ebf8;
+    color: #202124;
+}
+
+.form-container {
+    max-width: 720px;
+    margin: auto;
+}
+
+.form-container > h1, .form-container > p {
+    background: #fff;
+    padding: 24px 28px;
+}
+
+.form-container > h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    border-top: 12px solid #673ab7;
+    border-radius: 8px 8px 0 0;
+}
+
+.form-container > p {
+    margin: 0 0 16px;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 0 0 8px 8px;
+}
+
+
+.question-card {
+    background: #ffffff;
+    padding: 24px 28px 28px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.form-group {
+    margin: 0;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    display: block;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 8px;
+    border: none;
+    border-bottom: 2px solid #dadce0;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-bottom-color: #673ab7;
+}
+
+.inline, .block {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.inline {
+    margin-right: 24px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #673ab7;
+}
+
+.question-card:last-child {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    background-color: #673ab7;
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #5e35b1;
+}
+
+button.secondary {
+    background: transparent;
+    color: #673ab7;
+}
+
+button.secondary:hover {
+    background: rgba(103,58,183,0.1);
+}
